@@ -131,6 +131,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(browserIntent);
             }
         });
+
+        final Button logout = (Button) findViewById(R.id.logout);
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "You are exiting from this app!", Toast.LENGTH_SHORT).show();
+                MainActivity.this.finish();
+            }
+        });
     }
 
     private boolean URLValidator(String url){

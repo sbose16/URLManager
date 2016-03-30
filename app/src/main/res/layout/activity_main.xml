@@ -5,6 +5,16 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
 
+    <Button
+        android:textStyle="bold"
+        android:textSize="5pt"
+        android:id="@+id/logout"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        style="?android:attr/borderlessButtonStyle"/>
+
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -12,7 +22,7 @@
         android:ems="20"
         android:inputType="textMultiLine"
         android:id="@+id/editURL"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="120dp"
        />
 
     <Button
@@ -20,7 +30,7 @@
         android:layout_height="wrap_content"
         android:text="Short URL"
         android:id="@+id/btnGetShortURL"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="45dp"
         />
 
     <Button
@@ -28,7 +38,7 @@
         android:layout_height="wrap_content"
         android:text="Long URL"
         android:id="@+id/btnGetLongURL"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="45dp"
         android:layout_toEndOf="@+id/btnGetShortURL"
         />
 
@@ -37,7 +47,7 @@
         android:layout_height="wrap_content"
         android:text="Counter"
         android:id="@+id/btnGetCounter"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="45dp"
         android:layout_toEndOf="@+id/btnGetLongURL"
         />
 
@@ -47,7 +57,7 @@
         android:drawableStart="@android:drawable/ic_delete"
         android:id="@+id/btnGetClear"
         android:width="5dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="45dp"
         android:layout_toEndOf="@+id/btnGetCounter"
         />
 
