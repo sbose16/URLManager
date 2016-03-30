@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter URL here"
+        android:ems="20"
+        android:inputType="textMultiLine"
+        android:id="@+id/editURL"
+        android:layout_marginTop="60dp"
+       />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Short URL"
+        android:id="@+id/btnGetShortURL"
+        android:layout_marginTop="5dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Long URL"
+        android:id="@+id/btnGetLongURL"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/btnGetShortURL"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Counter"
+        android:id="@+id/btnGetCounter"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/btnGetLongURL"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@android:drawable/ic_delete"
+        android:id="@+id/btnGetClear"
+        android:width="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/btnGetCounter"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:textSize="8pt"
+        android:id="@+id/result"
+        android:layout_marginTop="250dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+</RelativeLayout>
